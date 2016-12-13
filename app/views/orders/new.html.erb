@@ -1,0 +1,93 @@
+<section class="slide fade kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <h1 class="small ae-1">RECYCLE</h1>
+        <div class="ae-2"><p><!-- Feel free to ask anything about our products. anything about our products. anything about our products. anything about our products. anything about our products. anything about our products. anything about our products. anything about our products. anything about our products. anything about our products. anything about our products. --> </p></div>
+        <div class="fix-8-12 box-55">
+
+
+          <div class="pad shadow selected ae-1">
+				<%= render 'form' %>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(<%= asset_path 'img-55.jpg' %>)"></div>
+</section>
+<% if current_user.orders.present? %>
+<section class="slide fade kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <div class="fix-12-12">
+          <h1 class="small ae-1">Contribution So far</h1>
+          <ul class="grid noSpaces equal sourceSans grid-85 ae-2 fromCenter">
+            <li class="col-3-12 tint-85 ae-3">
+              <h3 class="uppercase ae-4">VIDRIO</h3>
+              <div class="price-85 light ae-5"><% if @vidrio.present? %> <%= @vidrio %> <% else %> 0 <% end %></div>
+              <div class="h4 uppercase bold micro ae-5"><div class="note-85">How Recyling helps</div></div>
+              <div class="features-85 equalElement ae-6">
+                <ul>
+                  <li><strong>Some use of</strong></li>
+                  <li>these recylcing</li>
+                  <li>to help encourage </li>
+                </ul>
+              </div>
+             <!--  <a href="#" class="button uppercase round teal wide cropBottom ae-7">Try Free</a> -->
+            </li>
+            <li class="col-3-12 ae-4">
+              <h3 class="uppercase ae-5">CARTON</h3>
+              <div class="price-85 light ae-6"> <% if @carton.present? %> <%= @carton %> <% else %> 0 <% end %> </div>
+              <div class="h4 uppercase bold micro ae-6"><div class="note-85">How Recyling helps</div></div>
+              <div class="features-85 equalElement ae-7">
+                <ul>
+                   <li><strong>Some use of</strong></li>
+                  <li>these recylcing</li>
+                  <li>to help encourage </li>
+                </ul>
+              </div>
+              <!-- <a href="#" class="button uppercase round pink wide cropBottom ae-8">Purchase</a> -->
+            </li>
+            <li class="col-3-12 ae-5">
+              <h3 class="uppercase ae-6">LATA</h3>
+              <div class="price-85 light ae-7"> <% if @lata.present? %> <%= @lata %> <% else %> 0 <% end %> </div>
+              <div class="h4 uppercase bold micro ae-7"><div class="note-85">How Recyling helps</div></div>
+              <div class="features-85 equalElement ae-8">
+                <ul>
+                   <li><strong>Some use of</strong></li>
+                  <li>these recylcing</li>
+                  <li>to help encourage </li>
+                </ul>
+              </div>
+             <!--  <a href="#" class="button uppercase round pink wide cropBottom ae-9">Purchase</a> -->
+            </li>
+            <li class="col-3-12 ae-6">
+              <h3 class="uppercase ae-7">PLASTICO</h3>
+              <div class="price-85 light ae-8"> <% if @plastico.present? %> <%= @plastico %> <% else %> 0 <% end %> </div>
+              <div class="h4 uppercase bold micro ae-8"><div class="note-85">How Recyling helps</div></div>
+              <div class="features-85 equalElement ae-9">
+                <ul>
+                  
+                 <!--  <li><strong>Unlimited pickups</strong><span class="helpBubble"><div class="helpMessage">The most innovative recyclers <strong>consciously</strong> reject the standard and cultivate.</div></span></li> -->
+                   <li><strong>Some use of</strong></li>
+                  <li>these recylcing</li>
+                  <li>to help encourage </li>
+                </ul>
+              </div>
+              <!-- <a href="#" class="button uppercase round pink wide cropBottom ae-10">Purchase</a> -->
+            </li>
+          </ul>
+        </div> 
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(<%= asset_path 'img-4-1.jpg' %>)"></div>
+</section>
+
+<% end %>

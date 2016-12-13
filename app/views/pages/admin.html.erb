@@ -1,0 +1,66 @@
+<style>
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+</style>
+
+<section class="slide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12 left">
+          <h1 class="ae-1 center">Welcome</h1>
+          <div class="ae-2"><p class="center">This is your command center. We will keep evolving it. </p></div>
+          <div class="pad shadow ae-3 pad-59">
+            <div class=" ae-3">
+        
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>VIDRIO</th>
+        <th>CARTON</th>
+        <th>LATA</th>
+        <th>PLASTICO</th>
+        <th>Address</th>
+        <th>message</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @orders.each do |o| %>
+      <tr>
+        <td> <% if o.user.present? %> <%= o.user.email %> <% else %> Facebook <% end %> </td>
+        <td><%= o.vidrio %></td>
+         <td><%= o.carton %></td>
+        <td><%= o.lata %></td>
+        <td><%= o.plastico %></td>
+        <td><%= o.address %></td>
+        <td><%= o.description %></td>
+
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/img-59.jpg)"></div>
+</section>
+

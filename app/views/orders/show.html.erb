@@ -1,0 +1,52 @@
+<section class="slide fade kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <div class="fix-12-12">
+          <h1 class="small ae-1 fromLeft header-89">Alright your pick up order is placed</h1>
+          <div class="sourceSans popupTrigger clearBoth ae-2 fromRight" data-popup-id="89">
+            <span class="ae-5 fromCenter">
+              <span class="button play white button-89" style="visibility:hidden">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
+              </span>
+            </span>
+            <span class="text-89">Address : <strong><%= @order.address %> </strong> </span>
+          </div>
+          <ul class="grid later grid-89 left">
+            <li class="col-6-12 box-89">
+              <div class="quoteBubble ae-4 fromLeft">
+                <p class="cropBottom"><%= @order.description %></p>
+              </div>
+              <div class="quoteName ae-6 fromRight"><%= @order.user.email %><span class="quoteTitle sourceSans"><!-- , Creative Director @Designmodo --></span></div>
+            </li>
+            <li class="col-6-12">
+              <ul class="grid fromBottomRight equal">
+                <li class="col-6-12 ae-6 equalElement">
+                  <h2 class="uppercase"><%= @order.vidrio %> </h2>
+                  <p class="small">VIDRIO</p>
+                </li>
+                <li class="col-6-12 ae-7 equalElement">
+                  <h2 class="uppercase"><%= @order.carton %></h2>
+                  <p class="small">CARTON</p>
+                </li>
+                <li class="col-6-12 ae-8 equalElement">
+                  <h2 class="uppercase"><%= @order.lata %></h2>
+                  <p class="small">LATA</p>
+                </li>
+                <li class="col-6-12 ae-9 equalElement">
+                  <h2 class="uppercase"><%= @order.plastico %></h2>
+                  <p class="small">PLASTICO</p>
+                </li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(<%= asset_path 'img-89.jpg' %>)"></div>
+</section>
+

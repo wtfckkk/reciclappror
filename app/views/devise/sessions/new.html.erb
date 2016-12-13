@@ -1,0 +1,32 @@
+
+
+<section class="slide fade kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <h1 class="small ae-1">Sign In</h1>
+        <div class="fix-5-12 box-43">
+          <div class="pad shadow selected ae-2">
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name), :html => {:class => 'wide center'}) do |f| %>
+            
+              <label class="uppercase ae-3" for="email37">Email Address</label>
+              <%= f.email_field :email, autofocus: true, class: "stroke round wide ae-4", placeholder: "Email", type: "email" %>
+              <label class="uppercase ae-5" for="password37">Password</label>
+              <%= f.password_field :password, autocomplete: "off", class: "stroke round wide ae-6", placeholder: "Password", type: "password" %>
+              <small class="block ae-7"><span class="text-43"><%= render "devise/shared/links" %></span></small>
+              <%= f.submit "Log in", class: "button wide green round uppercase ae-8" %>
+            <% end %>
+          </div>
+          <small class="block ae-10 block-43">
+            <span class="text-43">
+             <!--  Don’t have an account?<a href="/" class="block bold">Create Account</a> -->
+            </span>
+          </small>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(<%= asset_path 'img-43.jpg' %>)"></div>
+</section>

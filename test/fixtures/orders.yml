@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vidrio: 1
+  carton: 1
+  lata: 1
+  plastico: 1
+  address: MyString
+  description: MyText
+  status: MyString
+  assigned: MyString
+  user_id: 
+  facebook_id: 
+
+two:
+  vidrio: 1
+  carton: 1
+  lata: 1
+  plastico: 1
+  address: MyString
+  description: MyText
+  status: MyString
+  assigned: MyString
+  user_id: 
+  facebook_id: 
